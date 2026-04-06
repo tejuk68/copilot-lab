@@ -38,6 +38,12 @@ activities = {
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    "Music Club:{"
+    ""description:"Learn singing and instruments",
+    "schedule":"Saturday,4:00 pm -6:00 pm",
+    "max_participants":12,
+    "participants":[]
     }
 }
 
