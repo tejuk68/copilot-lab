@@ -22,31 +22,45 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 # In-memory activity database
 activities = {
     "Chess Club": {
-        "description": "Learn strategies and compete in chess tournaments",
-        "schedule": "Fridays, 3:30 PM - 5:00 PM",
-        "max_participants": 12,
-        "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
+        "description": "A club for students who enjoy playing chess.",
+        "participants": []
     },
-    "Programming Class": {
-        "description": "Learn programming fundamentals and build software projects",
-        "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
-        "max_participants": 20,
-        "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
+    "Robotics Team": {
+        "description": "Design and build robots to compete in local and national competitions.",
+        "participants": []
     },
-    "Gym Class": {
-        "description": "Physical education and sports activities",
-        "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
-        "max_participants": 30,
-        "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    "Drama Club": {
+        "description": "Perform plays and skits throughout the school year.",
+        "participants": []
     },
-    "Music Club:{"
-    ""description:"Learn singing and instruments",
-    "schedule":"Saturday,4:00 pm -6:00 pm",
-    "max_participants":12,
-    "participants":[]
+    # New sports-related activities
+    "Basketball Team": {
+        "description": "Practice and compete in basketball games and tournaments.",
+        "participants": []
+    },
+    "Soccer Club": {
+        "description": "Train for soccer matches and improve teamwork skills.",
+        "participants": []
+    },
+    # New artistic activities
+    "Art Club": {
+        "description": "Explore painting, drawing, and other visual arts.",
+        "participants": []
+    },
+    "Music Band": {
+        "description": "Form a band to play instruments and perform music.",
+        "participants": []
+    },
+    # New intellectual activities
+    "Debate Club": {
+        "description": "Engage in debates on various topics to build critical thinking.",
+        "participants": []
+    },
+    "Science Club": {
+        "description": "Conduct experiments and learn about scientific principles.",
+        "participants": []
     }
 }
-
 
 @app.get("/")
 def root():
